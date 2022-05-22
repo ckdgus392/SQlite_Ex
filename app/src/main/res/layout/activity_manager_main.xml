@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+
+    tools:context=".ManagerMainActivity">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/title_color"
+        android:gravity="center"
+        android:text="관리자 메인화면"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="172dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_memberManage"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="136dp"
+        android:background="@color/title_color"
+        android:text="회원 정보 관리"
+
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_trainerManage"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="136dp"
+        android:background="@color/title_color"
+        android:text="트레이너 정보 관리"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_memberManage"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lectureManage"
+        android:layout_width="139dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="136dp"
+        android:background="@color/title_color"
+        android:text="강의 목록 관리"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trainerManage"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
